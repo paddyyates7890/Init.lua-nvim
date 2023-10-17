@@ -105,10 +105,3 @@ require('lazy').setup({
 }, {})
 
 vim.cmd('colorscheme moonfly')
-
-require('patrick.afterPlug.trouble')
-require('patrick.afterPlug.telescope')
-require('patrick.afterPlug.treesitter')
-require('patrick.afterPlug.treesitter')
-require('patrick.afterPlug.lsp')
-require('patrick.afterPlug.cmp')
