@@ -67,7 +67,7 @@ require('lazy').setup({
   {
     'lukas-reineke/indent-blankline.nvim',
     opts = {
-      char = '┊',
+      char = '|',
       show_trailing_blankline_indent = false,
     },
   },
@@ -88,10 +88,24 @@ require('lazy').setup({
   {
     'folke/trouble.nvim',
     opts = {
-      icons = false, -- use devicons for filenames
+      icons = false,
+      fold_open = "v",
+      fold_closed = ">",
+      action_keys = {
+	      close = "q"
+      },
+      signs = {
+      	-- icons / text used for a diagnostic
+      	error = "E",
+      	warning = "W",
+      	hint = "H",
+      	information = "I",
+      	other = "O",
+      },
+      use_diagnostic_signs = true
     },
   },
-
+  
 }, {})
 
 vim.o.tabstop = 4
