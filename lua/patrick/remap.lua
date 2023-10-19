@@ -22,3 +22,7 @@ vim.keymap.set('n', '<leader>gd', ':Trouble lsp_definitions<CR>', { desc = 'show
 vim.keymap.set("n", "<leader>init", "<cmd>e ~/.config/nvim/<cr>")
 
 vim.keymap.set("n", "<leader>pv", "<cmd>Ex<cr>")
+
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
