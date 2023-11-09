@@ -71,6 +71,7 @@ require('lazy').setup({
   {'lewis6991/gitsigns.nvim',},
   {'theprimeagen/harpoon'},
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+  { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
 }, {})
 
-vim.cmd('colorscheme moonfly')
+vim.cmd('colorscheme gruvbox')
