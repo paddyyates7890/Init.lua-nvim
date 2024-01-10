@@ -52,9 +52,6 @@ require('lazy').setup({
       icons = false,
       fold_open = "v",
       fold_closed = ">",
-      action_keys = {
-        close = "q"
-      },
       signs = {
       	-- icons / text used for a diagnostic
       	error = "E",
@@ -72,6 +69,7 @@ require('lazy').setup({
   {'theprimeagen/harpoon'},
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
+  {"zootedb0t/citruszest.nvim", name = "citruszest", lazy = false, priority = 1000,},
 }, {})
 
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme citruszest')

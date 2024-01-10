@@ -13,7 +13,6 @@ vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 vim.keymap.set('n', '<leader>pv', ':Ex<CR>', { silent = true })
-vim.keymap.set('n', '<F5>', ':NERDTreeToggle <CR>', { silent = true })
 
 vim.keymap.set('n', '<leader>sd', ':Trouble document_diagnostics<CR>', { desc = 'show errors', silent = true })
 vim.keymap.set('n', '<leader>sr', ':Trouble lsp_references<CR>', { desc = 'show refs', silent = true})
@@ -26,3 +25,5 @@ vim.keymap.set("n", "<leader>pv", "<cmd>Ex<cr>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "<leader>e", "<cmd>e /var/log/nginx/error.log<cr>")
