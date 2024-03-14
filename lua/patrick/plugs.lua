@@ -63,6 +63,7 @@ require('lazy').setup({
       use_diagnostic_signs = true
     },
   },
+  {'nvim-lualine/lualine.nvim'},
   { 'folke/which-key.nvim', opts = {} },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   {'lewis6991/gitsigns.nvim',},
@@ -72,4 +73,4 @@ require('lazy').setup({
   {"zootedb0t/citruszest.nvim", name = "citruszest", lazy = false, priority = 1000,},
 }, {})
 
-vim.cmd('colorscheme citruszest')
+vim.cmd('colorscheme gruvbox')
