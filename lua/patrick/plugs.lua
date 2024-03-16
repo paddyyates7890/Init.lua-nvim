@@ -39,13 +39,7 @@ require('lazy').setup({
       'nvim-lua/plenary.nvim',
     },
   },
-  {
-    'nvim-treesitter/nvim-treesitter',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter-textobjects',
-    },
-    build = ':TSUpdate',
-  },
+--  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
   {
     'folke/trouble.nvim',
     opts = {
@@ -71,6 +65,7 @@ require('lazy').setup({
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
   {"zootedb0t/citruszest.nvim", name = "citruszest", lazy = false, priority = 1000,},
+  {'mfussenegger/nvim-dap'},
 }, {})
 
 vim.cmd('colorscheme gruvbox')
