@@ -39,6 +39,10 @@ require('lazy').setup({
       'nvim-lua/plenary.nvim',
     },
   },
+  {
+      "nvim-telescope/telescope-file-browser.nvim",
+      dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  },
 --  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
   {
     'folke/trouble.nvim',
@@ -57,15 +61,14 @@ require('lazy').setup({
       use_diagnostic_signs = true
     },
   },
+  {'norcalli/nvim-colorizer.lua'},
   {'nvim-lualine/lualine.nvim'},
   { 'folke/which-key.nvim', opts = {} },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   {'lewis6991/gitsigns.nvim',},
   {'theprimeagen/harpoon'},
-  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
-  {"zootedb0t/citruszest.nvim", name = "citruszest", lazy = false, priority = 1000,},
-  {'mfussenegger/nvim-dap'},
+  { 'romgrk/doom-one.vim', name = "doom", lazy = false, priority = 1000 },
 }, {})
 
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme doom-one')
