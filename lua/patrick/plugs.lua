@@ -43,7 +43,9 @@ require('lazy').setup({
       "nvim-telescope/telescope-file-browser.nvim",
       dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
---  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
+  {'nvim-telescope/telescope-dap.nvim'},
+  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
+  {'mfussenegger/nvim-dap'},
   {
     'folke/trouble.nvim',
     opts = {
@@ -71,4 +73,4 @@ require('lazy').setup({
   { 'romgrk/doom-one.vim', name = "doom", lazy = false, priority = 1000 },
 }, {})
 
-vim.cmd('colorscheme doom-one')
+vim.cmd('colorscheme gruvbox')
