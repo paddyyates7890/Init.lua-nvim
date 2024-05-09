@@ -39,10 +39,6 @@ require('lazy').setup({
       'nvim-lua/plenary.nvim',
     },
   },
-  {
-      "nvim-telescope/telescope-file-browser.nvim",
-      dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  },
   {'nvim-telescope/telescope-dap.nvim'},
   {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
   {'mfussenegger/nvim-dap'},
@@ -70,7 +66,6 @@ require('lazy').setup({
   {'lewis6991/gitsigns.nvim',},
   {'theprimeagen/harpoon'},
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
-  { 'romgrk/doom-one.vim', name = "doom", lazy = false, priority = 1000 },
 }, {})
 
 vim.cmd('colorscheme gruvbox')

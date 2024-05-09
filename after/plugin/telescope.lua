@@ -7,9 +7,6 @@ require("telescope").setup {
     },
 }
 
-require("telescope").load_extension "file_browser"
-
-vim.keymap.set("n","<space>pv",":Telescope file_browser<CR><ESC>",{ noremap = true })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
     require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {

@@ -39,3 +39,12 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.o.colorcolumn = '100'
+
+vim.filetype.add({
+    extension = {
+        epx = "php"
+    },
+    filename = {
+        ["*.epx"] = "php"
+    },
+})
