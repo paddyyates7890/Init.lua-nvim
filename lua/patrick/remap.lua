@@ -29,9 +29,4 @@ vim.keymap.set("n", "<leader>bp", "<cmd>bp<cr>")
 vim.keymap.set("n", "<leader>bn", "<cmd>bn<cr>")
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>")
 
-vim.keymap.set("n", "<leader>nt", "<cmd>tabnew<cr>")
-vim.keymap.set("n", "<leader>tn", "<cmd>tabNext<cr>")
-vim.keymap.set("n", "<leader>tp", "<cmd>tabprevious<cr>")
-vim.keymap.set("n", "<leader>tc", "<cmd>tabclose<cr>")
-
 vim.keymap.set("x", "ESC", "<CR>c");

@@ -34,17 +34,17 @@ vim.o.signcolumn = 'yes'
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
-vim.o.completeopt = 'menuone,noselect'
+vim.o.completeopt = 'menuone,preview,noselect'
 
 vim.o.termguicolors = true
 
-vim.o.colorcolumn = '100'
-
 vim.filetype.add({
     extension = {
-        epx = "php"
+        epx = "php",
+        inc = "php",
     },
     filename = {
-        ["*.epx"] = "php"
+        ["*.epx"] = "php",
+		["*.inc"] = "php",
     },
 })

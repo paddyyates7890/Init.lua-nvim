@@ -62,10 +62,10 @@ require('lazy').setup({
   {'norcalli/nvim-colorizer.lua'},
   {'nvim-lualine/lualine.nvim'},
   { 'folke/which-key.nvim', opts = {} },
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   {'lewis6991/gitsigns.nvim',},
   {'theprimeagen/harpoon'},
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
+  {"aktersnurra/no-clown-fiesta.nvim", name="no-clown-fiesta", lazy = false, priority = 1000}
 }, {})
 
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme no-clown-fiesta')
