@@ -43,21 +43,47 @@ require('lazy').setup({
   {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
   {'mfussenegger/nvim-dap'},
   {
-    'folke/trouble.nvim',
-    opts = {
-      icons = false,
-      fold_open = "v",
-      fold_closed = ">",
-      signs = {
-      	-- icons / text used for a diagnostic
-      	error = "E",
-      	warning = "W",
-      	hint = "H",
-      	information = "I",
-      	other = "O",
+      "folke/trouble.nvim",
+      keys = {
+        {
+          "<leader>sd",
+          "<cmd>Trouble diagnostics toggle<cr>",
+          desc = "Diagnostics (Trouble)",
+        },
+        {
+          "<leader>sD",
+          "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+          desc = "Buffer Diagnostics (Trouble)",
+        },
+        {
+          "<leader>cs",
+          "<cmd>Trouble symbols toggle focus=false<cr>",
+          desc = "Symbols (Trouble)",
+        },
+        {
+          "<leader>sr",
+          "<cmd>Trouble lsp toggle focus=false<cr>",
+          desc = "LSP Definitions / references / ... (Trouble)",
+        },
+        {
+          "<leader>xL",
+          "<cmd>Trouble loclist toggle<cr>",
+          desc = "Location List (Trouble)",
+        },
+        {
+          "<leader>xQ",
+          "<cmd>Trouble qflist toggle<cr>",
+          desc = "Quickfix List (Trouble)",
+        },
       },
-      use_diagnostic_signs = true
+      opts = {}, -- for default options, refer to the configuration section for custom setup.
+  },
+  {'akinsho/flutter-tools.nvim',
+    lazy = false,
+    dependencies = {
+        'nvim-lua/plenary.nvim',
     },
+    config = true,
   },
   {'norcalli/nvim-colorizer.lua'},
   {'nvim-lualine/lualine.nvim'},
@@ -65,7 +91,8 @@ require('lazy').setup({
   {'lewis6991/gitsigns.nvim',},
   {'theprimeagen/harpoon'},
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
-  {"aktersnurra/no-clown-fiesta.nvim", name="no-clown-fiesta", lazy = false, priority = 1000}
+  {"savq/melange-nvim", name = "melange", lazy = false, priority = 1000},
 }, {})
 
-vim.cmd('colorscheme no-clown-fiesta')
+vim.o.background = "dark"
+vim.cmd('colorscheme melange')

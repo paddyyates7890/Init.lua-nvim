@@ -12,10 +12,6 @@ vim.keymap.set('n', '<leader>sh', '<C-w>s', { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
-vim.keymap.set('n', '<leader>sd', ':Trouble document_diagnostics<CR>', { desc = 'show errors', silent = true })
-vim.keymap.set('n', '<leader>sr', ':Trouble lsp_references<CR>', { desc = 'show refs', silent = true})
-vim.keymap.set('n', '<leader>gd', ':Trouble lsp_definitions<CR>', { desc = 'show defs', silent = true })
-
 vim.keymap.set("n", "<leader>init", "<cmd>e ~/.config/nvim/<cr>")
 
 vim.keymap.set("n", "<leader>pv", "<cmd>Ex<cr>", { desc = 'file explorer', silent = true  })
