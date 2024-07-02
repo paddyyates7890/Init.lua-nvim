@@ -86,13 +86,11 @@ require('lazy').setup({
     config = true,
   },
   {'norcalli/nvim-colorizer.lua'},
-  {'nvim-lualine/lualine.nvim'},
   { 'folke/which-key.nvim', opts = {} },
   {'lewis6991/gitsigns.nvim',},
   {'theprimeagen/harpoon'},
   { "morhetz/gruvbox", name = "gruvbox", lazy = false, priority = 1000 },
-  {"savq/melange-nvim", name = "melange", lazy = false, priority = 1000},
 }, {})
 
 vim.o.background = "dark"
-vim.cmd('colorscheme melange')
+vim.cmd('colorscheme gruvbox')
