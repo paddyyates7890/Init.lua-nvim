@@ -42,8 +42,9 @@ require('lazy').setup({
   {'nvim-telescope/telescope-dap.nvim'},
   {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
   {'mfussenegger/nvim-dap'},
-  {
-      "folke/trouble.nvim",
+  {"folke/trouble.nvim",
+      opts={},
+      cmd="Trouble",
       keys = {
         {
           "<leader>sd",
